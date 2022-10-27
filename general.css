@@ -1,0 +1,84 @@
+/* Google Font */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  overflow-y: hidden;
+}
+
+/***************************/
+/* GENERAL REUSABLE COMPONENTS */
+/***************************/
+
+.container {
+  max-width: 135rem;
+  margin: 0 auto;
+  margin-bottom: 7rem;
+}
+
+.grid {
+  display: grid;
+  row-gap: 9.6rem;
+  column-gap: 6.4rem;
+}
+
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+/****************************/
+
+.heading-primary {
+  font-weight: 700;
+  font-size: 7rem;
+  line-height: 1.05;
+  margin-bottom: 3rem;
+}
+
+.heading-secondary {
+  font-weight: 700;
+  color: #212326;
+  font-size: 6rem;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 3rem;
+}
+
+/************************/
