@@ -1,20 +1,3 @@
-//////////////////////////////////
-// Email validation
-
-function validation() {
-  var email = document.getElementById("email").value;
-
-  var regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}/;
-
-  if (email.match(regex)) {
-    alert("Your email address submitted successfully");
-    return true;
-  } else {
-    alert("Please enter a valid email address to can proceed");
-    return false;
-  }
-}
-
 // ////////////////////////////////
 // Hero Section Video popup
 const modal = document.querySelector(".hero-vid", ".close-modal");
