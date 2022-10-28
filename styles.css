@@ -151,6 +151,8 @@ nav {
   background-color: #002d2d;
   color: #fff;
   gap: 6rem;
+  margin-top: 8rem;
+  position: relative;
 }
 
 .hero-section-text {
@@ -158,7 +160,6 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 6rem;
 }
 
 .hero-head {
@@ -217,10 +218,62 @@ input::placeholder {
   margin-bottom: 3rem;
 }
 
-video[poster] {
+.hero-img {
   height: 100%;
   width: 100%;
 }
+
+.btn-play {
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  font-size: 9rem;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.close-modal {
+  position: absolute;
+  top: 1.5rem;
+  right: 34rem;
+  font-size: 5rem;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  border: none;
+  background: none;
+  z-index: 20;
+}
+
+/* -------------------------- */
+/* CLASSES TO MAKE MODAL WORK */
+.hidden {
+  display: none;
+}
+
+.hero-vid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #002d2d91;
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+/* video[poster] {
+  height: 100%;
+  width: 100%;
+} */
 
 /* //////////////////// */
 /* Features01 Section*/

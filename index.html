@@ -352,14 +352,35 @@
           email, you agree to receive marketing emails from Shopify.
         </p>
       </div>
-      <div class="hero-section-vid">
+      <div class="hero-section-vid flex flex-col">
+        <div>
+          <img
+            class="hero-img"
+            src="imgs/hero/hero-small.webp"
+            alt="Two people in a stock working on a computer"
+          />
+          <ion-icon class="show-modal btn-play" name="play-circle"></ion-icon>
+        </div>
+
+        <button class="close-modal hidden">&times;</button>
+
         <video
+          class="hero-vid hidden"
+          src="imgs/hero/Shopify Explainer Video (Helpful!) What is Shopify and How Does it Work.mp4"
+          type="video/mp4"
+          controls
+        ></video>
+
+        <div class="overlay hidden"></div>
+      </div>
+    </section>
+
+    <!-- <video
           src="imgs/hero/Shopify Explainer Video (Helpful!) What is Shopify and How Does it Work.mp4"
           poster="imgs/hero/hero-large.png"
           controls
-        ></video>
-      </div>
-    </section>
+        ></video> -->
+
     <!-- ////////////////////// -->
 
     <!-- ////////////////////// -->
