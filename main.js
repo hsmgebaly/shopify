@@ -4,18 +4,14 @@
 function validation() {
   var email = document.getElementById("email").value;
 
-  var pattern = /^[^ ]+@[^ ]+\.[a-z]{2.3}$/;
+  var regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}/;
 
-  if (email.match(pattern)) {
-    formData.classList.add("valid");
-    formData.classList.remove("invalid");
-    text.innerHTML = "You Email Addresss is Valid";
-    text.style.color = "#00ff00";
+  if (email.match(regex)) {
+    alert("Your email address submitted successfully");
+    return true;
   } else {
-    FormData.classList.remove("valid");
-    FormData.classList.add("invalid");
-    text.innerHTML = "Please Enter Valid Email Address";
-    text.style.color = "#ff0000";
+    alert("Please enter a valid email address to can proceed");
+    return false;
   }
 }
 
