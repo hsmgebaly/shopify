@@ -360,12 +360,17 @@
             id="email"
             name="signup-email"
             placeholder="Enter your email address"
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}"
             maxlength="50"
             title="please enter a correct email address: example@example.com"
             required
           />
-          <button type="submit" id="submit" class="hero-btn">
+          <button
+            type="submit"
+            onclick="validation()"
+            id="submit"
+            class="hero-btn"
+          >
             Start free trial
           </button>
         </form>
